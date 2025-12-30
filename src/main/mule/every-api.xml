@@ -102,7 +102,7 @@ output application/json
         </error-handler>
     </flow>
 	<flow name="post:\container:application\json:every-api-config">
-        <logger level="DEBUG" doc:name="incoming payload" doc:id="eb400dfd-0ad4-4120-8aeb-a134220fda1c" message="initial payload #[payload]" category="com.tcs.log" />
+        <logger level="INFO" doc:name="incoming payload" doc:id="eb400dfd-0ad4-4120-8aeb-a134220fda1c" message="initial payload" category="com.tcs.log" />
 		<ee:transform doc:name="Transform Message" doc:id="1b5db95d-2cac-49c5-97c1-f09a5071ea9d">
 			<ee:message>
 				<ee:set-payload><![CDATA[%dw 2.0
