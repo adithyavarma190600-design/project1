@@ -1,0 +1,23 @@
+#%RAML 1.0
+title: every-api
+version: v1
+protocols:
+  - HTTP
+mediaType: 
+- application/json
+
+/container:
+  post:
+    body:
+      application/json:
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                "app": "working fine"
+              }
+              
+        
+
